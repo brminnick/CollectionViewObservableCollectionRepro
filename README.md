@@ -16,6 +16,19 @@ This sample includes the following scenarios, demonstrating that the crash only 
 | ✅ No | `Xamarin.Forms.CollectionView` | `ObservableCollection<T>` | `true` | 
 | 💥 Yes | `Xamarin.Forms.CollectionView` | `ObservableCollection<T>` | `false` | 
 
+## Reproduction Steps
+
+1. Clone this repo
+2. Open `CollectionViewObservableCollectionRepro.sln` in Visual Studio
+3. In Visual Studio, set `CollectionViewObservableCollectionRepro.iOS` as the Startup Project
+4. In Visual Studio, build/deploy `CollectionViewObservableCollectionRepro.iOS` to an iOS Simulator or Device
+5. Once the app launched, click on the red button
+6. Confirm that the app crashes
+7. In Visual Studio, set `CollectionViewObservableCollectionRepro.Android` as the Startup Project
+8. In Visual Studio, build/deploy `CollectionViewObservableCollectionRepro.Android` to an Android Device or Emulator
+9. Once the app launched, click on the red button
+10. Confirm that the app crashes
+
 ### iOS Crash
 ![iOS Crash](https://user-images.githubusercontent.com/13558917/68251198-75bec980-ffd7-11e9-8622-6a045421a732.gif)
 
